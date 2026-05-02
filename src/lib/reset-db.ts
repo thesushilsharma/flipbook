@@ -9,10 +9,10 @@ export async function resetDatabase() {
   try {
     console.log("Clearing database...");
     await clearAllData();
-    
+
     console.log("Initializing with default data...");
     await initializeDefaultData();
-    
+
     console.log("✅ Database reset complete! Refresh the page.");
     return true;
   } catch (error) {
